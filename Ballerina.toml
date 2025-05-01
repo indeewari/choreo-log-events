@@ -1,8 +1,8 @@
 [package]
 org = "indeewari"
 name = "choreo_log_events"
-version = "0.1.0"
-distribution = "2201.8.9"
+version = "1.0.0"
+distribution = "2201.11.0"
 
 [build-options]
 observabilityIncluded = true

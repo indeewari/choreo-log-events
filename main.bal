@@ -20,6 +20,26 @@ service asgardeo:RegistrationService on webhookListener {
     remote function onAcceptUserInvite(asgardeo:GenericEvent event ) returns error? {
         log:printInfo(event.toJsonString());
     }
+
+    remote function onLockUser(asgardeo:GenericEvent event ) returns error? {
+            log:printInfo(event.toJsonString());
+    }
+
+    remote function onUnlockUser(asgardeo:GenericEvent event ) returns error? {
+                log:printInfo(event.toJsonString());
+    }
+
+    remote function onUpdateUserCredentials(asgardeo:GenericEvent event ) returns error? {
+                log:printInfo(event.toJsonString());
+    }
+
+    remote function onDeleteUser(asgardeo:GenericEvent event ) returns error? {
+                log:printInfo(event.toJsonString());
+    }
+
+    remote function onUpdateUserGroup(asgardeo:GenericEvent event ) returns error? {
+                log:printInfo(event.toJsonString());
+    }
 }
 
 service /ignore on httpListener {}
